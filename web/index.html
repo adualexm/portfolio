@@ -1,66 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+<link rel="stylesheet" href ="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
 <body>
-
-
-
-    <nav class="menu">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <H2> HI, I AM ADONIGHT ALEMAYEHU</H2>
-    <p>UI designer and web developer </p>
+
+    <section id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>ADONIGHT ALEMAYEHU</h1>
+                <p class="tagline">Full Stack Developer & Designer</p>
+                <p>Creating digital experiences that combine form and function</p>
+            </div>
+        </div>
+    </section>
+
     <section id="about">
-        <div class="about-container">
-            <h1>About Me </h1>
-            <p> I am a Professional UI/UX Designer and Web developer. Consectetur an adipisi elita, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Front Side of the Card -->
+                    <div class="flip-card-front">
+                        
+                        <h3>Adonight Alemayehu</h3>
+                        <p class="tagline">Full Stack Developer & Designer</p>
+                        <p>Passionate about building innovative digital solutions.</p>
+                    </div>
+                    <!-- Back Side of the Card -->
+                    <div class="flip-card-back">
+                        <h3>More About Me</h3>
+                        <p>
+                            Hi, I'm a 3rd-year Computer Science student with expertise in web development, AI, and UI/UX design. I love creating solutions that solve real-world problems.
+                        </p>
+                        <div class="skills-list">
+                            <p><strong>Skills:</strong></p>
+                            <ul>
+                                <li>Web Development (HTML, CSS, JavaScript)</li>
+                                <li>AI & Machine Learning</li>
+                                <li>UI/UX Design (Figma, Adobe XD)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="education">
-        <div class="education-con">
-
-            <H2> Education</H2>
-            <p> </p>
-        </div>
-    </section>
     <section id="skills">
-        <div class="skills-con">
-
-            <H2> SKILLS</H2>
-            <p> </p>
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend Development</h3>
+                    <p>C++,Java, PHP</p>
+                </div>
+                <div class="skill-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Figma, Adobe XD, Sketch</p>
+                </div>
+            </div>
         </div>
-
     </section>
-    <section id="project">
-        <div class="project-con">
 
-            <H2> Project</H2>
-            <p> </p>
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Design</h3>
+                    <p>Custom responsive websites</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Solutions</h3>
+                    <p>Database architecture & management</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Branding & digital assets</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="contact-con">
-
-            <H2> Contact</H2>
-            <p> </p>
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Your Phone Number" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +251944204291</p>
+                    <p><i class="fas fa-envelope"></i> adualex2004@gmail.com</p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/adualexm" target="_blank">GitHub Profile</a></p>
+                </div>
+            </div>
         </div>
     </section>
-</body>
-<footer>
-    <p>&copy; 2024 Adonight ALEMAYEHU . All Rights Reserved.</p>
-</footer>
 
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/adualexm" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Adonight . All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle Menu for Mobile
+        function toggleMenu() {
+            const navUl = document.querySelector('nav ul');
+            navUl.classList.toggle('active');
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                document.querySelector('nav ul').classList.remove('active');
+            });
+        });
+    </script>
+</body>
 </html>
