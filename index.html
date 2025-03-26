@@ -50,28 +50,44 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: purple; position: fixed; width: 100%; z-index: 1000;">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top"> Adonight
+        </a>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <!-- Right align -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="color: white;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" style="color: white;">Services</a>
+                        <!-- Added Services -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" style="color: white;">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="color: white;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <ul class="nav justify-content-end bg-purple" style="background-color: purple;">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#about" style="color: white;">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" style="color: white;">Contact</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true" style="color: white;">Skills</a>
-        </li>
-    </ul>
-    </ul>
     <div class="jumbotron jumbotron-fluid" style="background-image: url('bg.jpg'); background-size: cover; color: white; text-shadow: 2px 2px 4px #000000; height: 500px;">
         <div class="container d-flex flex-column justify-content-center align-items-center" style="height: 100%;">
             <h1 class="display-4 text-center">Adonight Alemayhu</h1>
             <p class="lead text-center">Welcome to my portfolio</p>
         </div>
-    </div>
+    </div><br>
     <div id="about" class="container my-5">
         <h2 class="text-center mb-4">About Me</h2>
         <div class="row justify-content-center">
@@ -79,12 +95,12 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front bg-primary text-white">
-                            <h3>Front Side</h3>
-                            <p>Hover to flip</p>
+                            <h3>Adonight Alemayehu</h3>
+                            <p> Full Stack Developer & Designer Passionate about building innovative digital solutions</p>
                         </div>
                         <div class="flip-card-back bg-secondary text-white">
-                            <h3>Back Side</h3>
-                            <p>More information about me.</p>
+                            <h3>More About Me </h3>
+                            <p>Hi, I'm a 3rd-year Computer Science student with expertise in web development, Al, and UI/UX design. I love creating solutions that solve real-world problems. Skills: Web Development (HTML, CSS, JavaScript) UI/UX Design (Figma)</p>
                         </div>
                     </div>
                 </div>
@@ -92,7 +108,48 @@
         </div>
     </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <div id="skills" class="container my-5">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row gy-3">
+            <div class="col-md-4">
+                <div class="card text-center h-100" style="background-color: #E6E6FA;">
+                    <div class="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" width="50">
+                        <h5 class="card-title mt-2">HTML</h5>
+                        <p class="card-text">Experienced in creating structured and semantic web pages using HTML.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center h-100" style="background-color: #E6E6FA;">
+                    <div class="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" width="50">
+                        <h5 class="card-title mt-2">Java</h5>
+                        <p class="card-text">Proficient in developing robust applications using Java programming language.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center h-100" style="background-color: #E6E6FA;">
+                    <div class="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Adobe Illustrator Logo" width="50">
+                        <h5 class="card-title mt-2">Graphics</h5>
+                        <p class="card-text">Skilled in graphic design and creating visual content using Adobe Illustrator.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+
+
+
+    <br>
+    <br>
     <div id="contact" class="container my-5">
         <h2 class="text-center mb-4">Contact Me</h2>
         <div class="row justify-content-center">
@@ -118,8 +175,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-<footer class="text-center p-3">
+<footer class="text-center p-3" style="background-color: purple; color: white;">
     <p>&copy; 2025 Adonight . All rights reserved.</p>
 </footer>
+
+
 
 </html>
